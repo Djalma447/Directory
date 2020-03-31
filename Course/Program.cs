@@ -17,6 +17,13 @@ namespace Course
                 {
                     Console.WriteLine(x);
                 }
+
+                var files = Directory.EnumerateFiles(path, "*.*", SearchOption.AllDirectories);
+                Console.WriteLine("Files:");
+                foreach (string x in files)
+                {
+                    Console.WriteLine(x);
+                }
             }
             catch (IOException e)
             {
