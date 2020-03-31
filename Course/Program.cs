@@ -25,7 +25,7 @@ namespace Course
                     Console.WriteLine(x);
                 }
 
-                Directory.CreateDirectory(path + @"\newfolderDJR");
+                Directory.CreateDirectory(@"c:\temp\folderdj\newfolderDJR");
             }
             catch (IOException e)
             {
